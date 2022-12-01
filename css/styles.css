@@ -63,7 +63,8 @@ body{
 }
 .panel-left p{
     padding: 10px;
-    font-size: 30px;
+    font-size: 25px;
+    color: white;
 }
 .panel-right{
     width: 45%;
@@ -156,4 +157,8 @@ body{
 }
 .text-rights p{
     text-align: right;
+}
+
+span{
+    font-size: 30px;
 }
