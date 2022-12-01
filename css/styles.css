@@ -1,0 +1,159 @@
+@import url('https://fonts.cdnfonts.com/css/matrix');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+:root {
+    --color-text: #22b455;
+    --background-color: #020204;
+    --stars-color: white;
+    --shadow-color: #b9babd;
+    --user-border: #16ded4;
+    --user-border-2: #19a9f7;    
+    --matrix: 'Matrix', sans-serif;
+    --gaming-text: 'Press Start 2P', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   box-sizing: border-box;
+   background-color: rgba(160, 174, 180, 0.8);
+}
+ 
+#header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px 10px 20px;
+}
+
+.img-1{
+    padding: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-1 img{
+    width: 100%;
+    height: 174px;
+    object-fit: fill;
+}
+
+#main{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.panel-top{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.panel-top img{
+    width: 25%;
+}
+
+.panel-left{
+    width: 45%;
+    height: auto;
+    padding: 20px;
+}
+.panel-left p{
+    padding: 10px;
+    font-size: 30px;
+}
+.panel-right{
+    width: 45%;
+    height: auto;
+    padding: 20px;
+}
+.panel-bottom{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: var(--gaming-text);
+    font-weight: bolder;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    from {color:var(--color-text);}
+    to {color:var(--user-border);}
+}
+
+.img-container{
+    width: 100%;
+    padding: 20px;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.button-container{
+    width: 100%;
+    height: 14%;
+    padding: 20px;
+    text-align: center;
+}
+
+.button-container button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: var(--color-text);
+    color: var(--stars-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+.button-container button:hover{
+    width: 80%;
+    height: 100%;
+    border: 1px solid white;
+    background-color: red;
+    color: var(--stars-color);
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+#container-external{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: auto;
+    margin: 40px;
+    margin-bottom: 150px;
+    background-color: var(--background-color);
+    color: var(--color-text);
+    box-shadow: 1px 1px 1px 13px rgba( 99, 110, 120, 0.2);
+}
+
+#footer{
+    display: flex;
+    box-sizing: inherit;
+    background-color: var(--background-color);
+    box-shadow: 3px 3px 3px 10px var(--color-text);
+    color: var(--stars-color);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+}
+
+.name-rights{
+    width: 50%;
+}
+.text-rights{
+    width: 50%;
+}
+.text-rights p{
+    text-align: right;
+}
